@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETFLIX - Watch Movies & TV Shows Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loader-logo">NETFLIX</div>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="#" class="logo">NETFLIX</a>
+                <ul class="nav-menu">
+                    <li><a href="#" class="nav-link active">Home</a></li>
+                    <li><a href="#" class="nav-link">TV Shows</a></li>
+                    <li><a href="#" class="nav-link">Movies</a></li>
+                    <li><a href="#" class="nav-link">Popular on NETFLIX</a></li>
+                    <li><a href="#" class="nav-link">My List</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <button class="search-btn" aria-label="Search">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+                <button class="notification-btn" aria-label="Notifications">
+                    <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                        <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                    </svg>
+                    <span class="notification-badge">3</span>
+                </button>
+                <div class="profile-dropdown">
+                    <button class="profile-btn" aria-label="Profile">
+                        <img src="https://picsum.photos/seed/profile/32/32.jpg" alt="Profile" class="profile-img">
+                        <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Profile</a>
+                        <a href="#" class="dropdown-item">Account</a>
+                        <a href="#" class="dropdown-item">Settings</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">Sign Out</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-background">
+            <img src="https://picsum.photos/seed/hero1/1920/1080.jpg" alt="Hero Background" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Cosmic Odyssey</h1>
+            <p class="hero-description">
+                In the year 2157, humanity's last hope lies in the hands of a rogue astronaut 
+                who must navigate through uncharted galaxies to find a new home for mankind.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary play-btn">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8 5v14l11-7z"/>
+                    </svg>
+                    Play
+                </button>
+                <button class="btn btn-secondary info-btn">
+                    <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <circle cx="12" cy="12" r="10"/>
+                        <line x1="12" y1="16" x2="12" y2="12"/>
+                        <line x1="12" y1="8" x2="12.01" y2="8"/>
+                    </svg>
+                    More Info
+                </button>
+            </div>
+        </div>
+        <div class="hero-indicators">
+            <span class="indicator active"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Trending Now -->
+        <section class="movie-row">
+            <h2 class="row-title">Trending Now</h2>
+            <div class="carousel-container">
+                <button class="carousel-btn prev-btn" aria-label="Previous">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M15.75 19.5L8.25 12l7.5-7.5"/>
+                    </svg>
+                </button>
+                <div class="carousel">
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/seed/movie1/300/450.jpg" alt="Movie" class="movie-poster">
+                        <div class="card-overlay">
+                            <button class="card-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </button>
+                            <div class="card-info">
+                                <span class="movie-title">Neon Dreams</span>
+                                <span class="movie-meta">1h 45min • Action</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="action-btn add-btn" aria-label="Add to list">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <line x1="12" y1="5" x2="12" y2="19"/>
+                                        <line x1="5" y1="12" x2="19" y2="12"/>
+                                    </svg>
+                                </button>
+                                <button class="action-btn like-btn" aria-label="Like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/seed/movie2/300/450.jpg" alt="Movie" class="movie-poster">
+                        <div class="card-overlay">
+                            <button class="card-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </button>
+                            <div class="card-info">
+                                <span class="movie-title">Quantum Leap</span>
+                                <span class="movie-meta">2h 10min • Sci-Fi</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="action-btn add-btn" aria-label="Add to list">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <line x1="12" y1="5" x2="12" y2="19"/>
+                                        <line x1="5" y1="12" x2="19" y2="12"/>
+                                    </svg>
+                                </button>
+                                <button class="action-btn like-btn" aria-label="Like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/seed/movie3/300/450.jpg" alt="Movie" class="movie-poster">
+                        <div class="card-overlay">
+                            <button class="card-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </button>
+                            <div class="card-info">
+                                <span class="movie-title">Shadow Protocol</span>
+                                <span class="movie-meta">1h 55min • Thriller</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="action-btn add-btn" aria-label="Add to list">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <line x1="12" y1="5" x2="12" y2="19"/>
+                                        <line x1="5" y1="12" x2="19" y2="12"/>
+                                    </svg>
+                                </button>
+                                <button class="action-btn like-btn" aria-label="Like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/seed/movie4/300/450.jpg" alt="Movie" class="movie-poster">
+                        <div class="card-overlay">
+                            <button class="card-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </button>
+                            <div class="card-info">
+                                <span class="movie-title">Midnight Express</span>
+                                <span class="movie-meta">1h 30min • Drama</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="action-btn add-btn" aria-label="Add to list">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <line x1="12" y1="5" x2="12" y2="19"/>
+                                        <line x1="5" y1="12" x2="19" y2="12"/>
+                                    </svg>
+                                </button>
+                                <button class="action-btn like-btn" aria-label="Like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/seed/movie5/300/450.jpg" alt="Movie" class="movie-poster">
+                        <div class="card-overlay">
+                            <button class="card-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </button>
+                            <div class="card-info">
+                                <span class="movie-title">Digital Warriors</span>
+                                <span class="movie-meta">2h 5min • Action</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="action-btn add-btn" aria-label="Add to list">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <line x1="12" y1="5" x2="12" y2="19"/>
+                                        <line x1="5" y1="12" x2="19" y2="12"/>
+                                    </svg>
+                                </button>
+                                <button class="action-btn like-btn" aria-label="Like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/seed/movie6/300/450.jpg" alt="Movie" class="movie-poster">
+                        <div class="card-overlay">
+                            <button class="card-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </button>
+                            <div class="card-info">
+                                <span class="movie-title">Ocean's Mystery</span>
+                                <span class="movie-meta">1h 40min • Mystery</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="action-btn add-btn" aria-label="Add to list">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <line x1="12" y1="5" x2="12" y2="19"/>
+                                        <line x1="5" y1="12" x2="19" y2="12"/>
+                                    </svg>
+                                </button>
+                                <button class="action-btn like-btn" aria-label="Like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next-btn" aria-label="Next">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8.25 4.5L15.75 12l-7.5 7.5"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        <!-- Popular on NETFLIX -->
+        <section class="movie-row">
+            <h2 class="row-title">Popular on NETFLIX</h2>
+            <div class="carousel-container">
+                <button class="carousel-btn prev-btn" aria-label="Previous">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M15.75 19.5L8.25 12l7.5-7.5"/>
+                    </svg>
+                </button>
+                <div class="carousel">
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/seed/movie7/300/450.jpg" alt="Movie" class="movie-poster">
+                        <div class="card-overlay">
+                            <button class="card-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </button>
+                            <div class="card-info">
+                                <span class="movie-title">Galactic Empire</span>
+                                <span class="movie-meta">2h 20min • Sci-Fi</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="action-btn add-btn" aria-label="Add to list">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <line x1="12" y1="5" x2="12" y2="19"/>
+                                        <line x1="5" y1="12" x2="19" y2="12"/>
+                                    </svg>
+                                </button>
+                                <button class="action-btn like-btn" aria-label="Like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/seed/movie8/300/450.jpg" alt="Movie" class="movie-poster">
+                        <div class="card-overlay">
+                            <button class="card-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </button>
+                            <div class="card-info">
+                                <span class="movie-title">City Lights</span>
+                                <span class="movie-meta">1h 35min • Romance</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="action-btn add-btn" aria-label="Add to list">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <line x1="12" y1="5" x2="12" y2="19"/>
+                                        <line x1="5" y1="12" x2="19" y2="12"/>
+                                    </svg>
+                                </button>
+                                <button class="action-btn like-btn" aria-label="Like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/seed/movie9/300/450.jpg" alt="Movie" class="movie-poster">
+                        <div class="card-overlay">
+                            <button class="card-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </button>
+                            <div class="card-info">
+                                <span class="movie-title">Desert Storm</span>
+                                <span class="movie-meta">2h 15min • War</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="action-btn add-btn" aria-label="Add to list">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <line x1="12" y1="5" x2="12" y2="19"/>
+                                        <line x1="5" y1="12" x2="19" y2="12"/>
+                                    </svg>
+                                </button>
+                                <button class="action-btn like-btn" aria-label="Like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/seed/movie10/300/450.jpg" alt="Movie" class="movie-poster">
+                        <div class="card-overlay">
+                            <button class="card-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </button>
+                            <div class="card-info">
+                                <span class="movie-title">Mind Games</span>
+                                <span class="movie-meta">1h 50min • Thriller</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="action-btn add-btn" aria-label="Add to list">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <line x1="12" y1="5" x2="12" y2="19"/>
+                                        <line x1="5" y1="12" x2="19" y2="12"/>
+                                    </svg>
+                                </button>
+                                <button class="action-btn like-btn" aria-label="Like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/seed/movie11/300/450.jpg" alt="Movie" class="movie-poster">
+                        <div class="card-overlay">
+                            <button class="card-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </button>
+                            <div class="card-info">
+                                <span class="movie-title">Arctic Circle</span>
+                                <span class="movie-meta">1h 45min • Adventure</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="action-btn add-btn" aria-label="Add to list">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <line x1="12" y1="5" x2="12" y2="19"/>
+                                        <line x1="5" y1="12" x2="19" y2="12"/>
+                                    </svg>
+                                </button>
+                                <button class="action-btn like-btn" aria-label="Like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/seed/movie12/300/450.jpg" alt="Movie" class="movie-poster">
+                        <div class="card-overlay">
+                            <button class="card-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </button>
+                            <div class="card-info">
+                                <span class="movie-title">Virtual Reality</span>
+                                <span class="movie-meta">2h 30min • Sci-Fi</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="action-btn add-btn" aria-label="Add to list">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <line x1="12" y1="5" x2="12" y2="19"/>
+                                        <line x1="5" y1="12" x2="19" y2="12"/>
+                                    </svg>
+                                </button>
+                                <button class="action-btn like-btn" aria-label="Like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next-btn" aria-label="Next">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8.25 4.5L15.75 12l-7.5 7.5"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        <!-- Continue Watching -->
+        <section class="movie-row">
+            <h2 class="row-title">Continue Watching</h2>
+            <div class="carousel-container">
+                <button class="carousel-btn prev-btn" aria-label="Previous">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M15.75 19.5L8.25 12l7.5-7.5"/>
+                    </svg>
+                </button>
+                <div class="carousel">
+                    <div class="movie-card continue-watching">
+                        <img src="https://picsum.photos/seed/continue1/300/450.jpg" alt="Movie" class="movie-poster">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 65%;"></div>
+                        </div>
+                        <div class="card-overlay">
+                            <button class="card-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </button>
+                            <div class="card-info">
+                                <span class="movie-title">Time Traveler</span>
+                                <span class="movie-meta">45 min left • Episode 3</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="action-btn add-btn" aria-label="Add to list">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <line x1="12" y1="5" x2="12" y2="19"/>
+                                        <line x1="5" y1="12" x2="19" y2="12"/>
+                                    </svg>
+                                </button>
+                                <button class="action-btn like-btn" aria-label="Like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card continue-watching">
+                        <img src="https://picsum.photos/seed/continue2/300/450.jpg" alt="Movie" class="movie-poster">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 30%;"></div>
+                        </div>
+                        <div class="card-overlay">
+                            <button class="card-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </button>
+                            <div class="card-info">
+                                <span class="movie-title">Dark Waters</span>
+                                <span class="movie-meta">1h 20min left</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="action-btn add-btn" aria-label="Add to list">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <line x1="12" y1="5" x2="12" y2="19"/>
+                                        <line x1="5" y1="12" x2="19" y2="12"/>
+                                    </svg>
+                                </button>
+                                <button class="action-btn like-btn" aria-label="Like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card continue-watching">
+                        <img src="https://picsum.photos/seed/continue3/300/450.jpg" alt="Movie" class="movie-poster">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 80%;"></div>
+                        </div>
+                        <div class="card-overlay">
+                            <button class="card-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </button>
+                            <div class="card-info">
+                                <span class="movie-title">Space Station</span>
+                                <span class="movie-meta">15 min left • Episode 8</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="action-btn add-btn" aria-label="Add to list">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <line x1="12" y1="5" x2="12" y2="19"/>
+                                        <line x1="5" y1="12" x2="19" y2="12"/>
+                                    </svg>
+                                </button>
+                                <button class="action-btn like-btn" aria-label="Like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card continue-watching">
+                        <img src="https://picsum.photos/seed/continue4/300/450.jpg" alt="Movie" class="movie-poster">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 45%;"></div>
+                        </div>
+                        <div class="card-overlay">
+                            <button class="card-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </button>
+                            <div class="card-info">
+                                <span class="movie-title">Mountain Peak</span>
+                                <span class="movie-meta">55 min left</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="action-btn add-btn" aria-label="Add to list">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <line x1="12" y1="5" x2="12" y2="19"/>
+                                        <line x1="5" y1="12" x2="19" y2="12"/>
+                                    </svg>
+                                </button>
+                                <button class="action-btn like-btn" aria-label="Like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next-btn" aria-label="Next">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8.25 4.5L15.75 12l-7.5 7.5"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        <!-- Action Movies -->
+        <section class="movie-row">
+            <h2 class="row-title">Action Movies</h2>
+            <div class="carousel-container">
+                <button class="carousel-btn prev-btn" aria-label="Previous">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M15.75 19.5L8.25 12l7.5-7.5"/>
+                    </svg>
+                </button>
+                <div class="carousel">
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/seed/action1/300/450.jpg" alt="Movie" class="movie-poster">
+                        <div class="card-overlay">
+                            <button class="card-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </button>
+                            <div class="card-info">
+                                <span class="movie-title">Speed Racer</span>
+                                <span class="movie-meta">2h 10min • Action</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="action-btn add-btn" aria-label="Add to list">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <line x1="12" y1="5" x2="12" y2="19"/>
+                                        <line x1="5" y1="12" x2="19" y2="12"/>
+                                    </svg>
+                                </button>
+                                <button class="action-btn like-btn" aria-label="Like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/seed/action2/300/450.jpg" alt="Movie" class="movie-poster">
+                        <div class="card-overlay">
+                            <button class="card-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </button>
+                            <div class="card-info">
+                                <span class="movie-title">Fire Storm</span>
+                                <span class="movie-meta">1h 55min • Action</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="action-btn add-btn" aria-label="Add to list">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <line x1="12" y1="5" x2="12" y2="19"/>
+                                        <line x1="5" y1="12" x2="19" y2="12"/>
+                                    </svg>
+                                </button>
+                                <button class="action-btn like-btn" aria-label="Like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/seed/action3/300/450.jpg" alt="Movie" class="movie-poster">
+                        <div class="card-overlay">
+                            <button class="card-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </button>
+                            <div class="card-info">
+                                <span class="movie-title">Ninja Warrior</span>
+                                <span class="movie-meta">2h 5min • Action</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="action-btn add-btn" aria-label="Add to list">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <line x1="12" y1="5" x2="12" y2="19"/>
+                                        <line x1="5" y1="12" x2="19" y2="12"/>
+                                    </svg>
+                                </button>
+                                <button class="action-btn like-btn" aria-label="Like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/seed/action4/300/450.jpg" alt="Movie" class="movie-poster">
+                        <div class="card-overlay">
+                            <button class="card-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </button>
+                            <div class="card-info">
+                                <span class="movie-title">Elite Force</span>
+                                <span class="movie-meta">1h 50min • Action</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="action-btn add-btn" aria-label="Add to list">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <line x1="12" y1="5" x2="12" y2="19"/>
+                                        <line x1="5" y1="12" x2="19" y2="12"/>
+                                    </svg>
+                                </button>
+                                <button class="action-btn like-btn" aria-label="Like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/seed/action5/300/450.jpg" alt="Movie" class="movie-poster">
+                        <div class="card-overlay">
+                            <button class="card-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </button>
+                            <div class="card-info">
+                                <span class="movie-title">Thunder Strike</span>
+                                <span class="movie-meta">2h 15min • Action</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="action-btn add-btn" aria-label="Add to list">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <line x1="12" y1="5" x2="12" y2="19"/>
+                                        <line x1="5" y1="12" x2="19" y2="12"/>
+                                    </svg>
+                                </button>
+                                <button class="action-btn like-btn" aria-label="Like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/seed/action6/300/450.jpg" alt="Movie" class="movie-poster">
+                        <div class="card-overlay">
+                            <button class="card-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </button>
+                            <div class="card-info">
+                                <span class="movie-title">Combat Zone</span>
+                                <span class="movie-meta">1h 40min • Action</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="action-btn add-btn" aria-label="Add to list">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <line x1="12" y1="5" x2="12" y2="19"/>
+                                        <line x1="5" y1="12" x2="19" y2="12"/>
+                                    </svg>
+                                </button>
+                                <button class="action-btn like-btn" aria-label="Like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next-btn" aria-label="Next">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8.25 4.5L15.75 12l-7.5 7.5"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        <!-- Sci-Fi Originals -->
+        <section class="movie-row">
+            <h2 class="row-title">Sci-Fi Originals</h2>
+            <div class="carousel-container">
+                <button class="carousel-btn prev-btn" aria-label="Previous">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M15.75 19.5L8.25 12l7.5-7.5"/>
+                    </svg>
+                </button>
+                <div class="carousel">
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/seed/scifi1/300/450.jpg" alt="Movie" class="movie-poster">
+                        <div class="card-overlay">
+                            <button class="card-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </button>
+                            <div class="card-info">
+                                <span class="movie-title">Alien Contact</span>
+                                <span class="movie-meta">2h 25min • Sci-Fi</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="action-btn add-btn" aria-label="Add to list">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <line x1="12" y1="5" x2="12" y2="19"/>
+                                        <line x1="5" y1="12" x2="19" y2="12"/>
+                                    </svg>
+                                </button>
+                                <button class="action-btn like-btn" aria-label="Like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/seed/scifi2/300/450.jpg" alt="Movie" class="movie-poster">
+                        <div class="card-overlay">
+                            <button class="card-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </button>
+                            <div class="card-info">
+                                <span class="movie-title">Time Paradox</span>
+                                <span class="movie-meta">2h 10min • Sci-Fi</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="action-btn add-btn" aria-label="Add to list">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <line x1="12" y1="5" x2="12" y2="19"/>
+                                        <line x1="5" y1="12" x2="19" y2="12"/>
+                                    </svg>
+                                </button>
+                                <button class="action-btn like-btn" aria-label="Like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/seed/scifi3/300/450.jpg" alt="Movie" class="movie-poster">
+                        <div class="card-overlay">
+                            <button class="card-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </button>
+                            <div class="card-info">
+                                <span class="movie-title">Neural Network</span>
+                                <span class="movie-meta">1h 55min • Sci-Fi</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="action-btn add-btn" aria-label="Add to list">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <line x1="12" y1="5" x2="12" y2="19"/>
+                                        <line x1="5" y1="12" x2="19" y2="12"/>
+                                    </svg>
+                                </button>
+                                <button class="action-btn like-btn" aria-label="Like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/seed/scifi4/300/450.jpg" alt="Movie" class="movie-poster">
+                        <div class="card-overlay">
+                            <button class="card-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </button>
+                            <div class="card-info">
+                                <span class="movie-title">Dimension X</span>
+                                <span class="movie-meta">2h 30min • Sci-Fi</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="action-btn add-btn" aria-label="Add to list">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <line x1="12" y1="5" x2="12" y2="19"/>
+                                        <line x1="5" y1="12" x2="19" y2="12"/>
+                                    </svg>
+                                </button>
+                                <button class="action-btn like-btn" aria-label="Like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/seed/scifi5/300/450.jpg" alt="Movie" class="movie-poster">
+                        <div class="card-overlay">
+                            <button class="card-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </button>
+                            <div class="card-info">
+                                <span class="movie-title">Quantum Realm</span>
+                                <span class="movie-meta">2h 5min • Sci-Fi</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="action-btn add-btn" aria-label="Add to list">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <line x1="12" y1="5" x2="12" y2="19"/>
+                                        <line x1="5" y1="12" x2="19" y2="12"/>
+                                    </svg>
+                                </button>
+                                <button class="action-btn like-btn" aria-label="Like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img src="https://picsum.photos/seed/scifi6/300/450.jpg" alt="Movie" class="movie-poster">
+                        <div class="card-overlay">
+                            <button class="card-play-btn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8 5v14l11-7z"/>
+                                </svg>
+                            </button>
+                            <div class="card-info">
+                                <span class="movie-title">Cyber Revolution</span>
+                                <span class="movie-meta">1h 45min • Sci-Fi</span>
+                            </div>
+                            <div class="card-actions">
+                                <button class="action-btn add-btn" aria-label="Add to list">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <line x1="12" y1="5" x2="12" y2="19"/>
+                                        <line x1="5" y1="12" x2="19" y2="12"/>
+                                    </svg>
+                                </button>
+                                <button class="action-btn like-btn" aria-label="Like">
+                                    <svg viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next-btn" aria-label="Next">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M8.25 4.5L15.75 12l-7.5 7.5"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Device Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Preferences</a></li>
+                    <li><a href="#">Corporate Information</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="#">Social Media</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+                    <li><a href="#">Redeem Voucher</a></li>
+                    <li><a href="#">Partners</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 StreamFlix. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Audio Elements -->
+    <audio id="clickSound" preload="auto">
+        <source src="data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+DyvmwhBSuBzvLZiTYIG2m98OScTgwOUarm7blmFgU7k9n1unEiBC13yO/eizEIHWq+8+OWT" type="audio/wav">
+    </audio>
+    <audio id="hoverSound" preload="auto">
+        <source src="data:audio/wav;base64,UklGRhwCAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YdgCAAAAAAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA//8AAP//AAD//wAA" type="audio/wav">
+    </audio>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
