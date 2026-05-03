@@ -2,19 +2,17 @@
 
 A premium streaming platform homepage clone built with pure HTML, CSS, and JavaScript. NETFLIX features a cinematic dark theme, smooth animations, and interactive elements inspired by modern streaming services.
 
-## 🚀 Live Demo
+## Live Demo
 
-**Live Link:** [View NETFLIX Homepage](http://localhost:8000)  
-*Experience the fully interactive streaming platform homepage with all animations and features*
+**Live Link:** https://alfido-tech-task-4.vercel.app/
 
-## 📚 Documentation
+## Documentation
 
-**Documentation:** [Project Documentation](./README.md)  
-*Complete guide to features, implementation, and customization*
+**Documentation:** https://docs.google.com/document/d/1Go1tchmqP4qcq7dSvOP3T4Iobo8qMTDoYdZvKDbvOgY/edit?usp=sharing
 
 ## Features
 
-### 🎬 Core Functionality
+### Core Functionality
 - **Hero Section**: Full-screen cinematic banner with auto-rotation every 8 seconds
 - **Sticky Navigation**: Transparent navbar that becomes solid on scroll
 - **Movie Carousels**: Horizontal scrolling with arrow controls and smooth animations
@@ -22,14 +20,14 @@ A premium streaming platform homepage clone built with pure HTML, CSS, and JavaS
 - **Sound Effects**: Subtle click and hover sounds for enhanced UX
 - **Loading Animation**: Cinematic intro with animated logo reveal
 
-### 🎨 Design Elements
+### Design Elements
 - **Dark Theme**: Premium black background with subtle gradients
 - **Typography**: Modern Inter font family with proper hierarchy
 - **Animations**: Smooth 60fps transitions and micro-interactions
 - **Responsive Design**: Optimized for desktop, tablet, and mobile devices
 - **Visual Effects**: Parallax scrolling, fade-ins, and scale transformations
 
-### 🎯 Interactive Features
+### Interactive Features
 - **Carousel Controls**: Arrow navigation and mouse wheel scrolling
 - **Card Interactions**: Hover overlays with movie details
 - **Progress Bars**: Continue watching section with visual progress
@@ -138,4 +136,4 @@ Inspired by modern streaming platforms like Netflix, Disney+, and HBO Max. Built
 
 ---
 
-**NETFLIX** 🎬 - Your gateway to premium entertainment
+**NETFLIX**  - Your gateway to premium entertainment
